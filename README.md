@@ -35,6 +35,7 @@ The address width for 4KB memory is 12 bits (2^12 = 4096).
 
 
 // rom_memory.v
+```
 module rom_memory (
     input wire clk,
     input wire write_enable,   // Signal to enable write operation
@@ -55,13 +56,15 @@ module rom_memory (
         data_out <= rom[address];
     end
 endmodule
+```
+![Screenshot (21)](https://github.com/user-attachments/assets/d96f94d4-84c2-4a84-a3af-98c1365e82bd)
 
 
 Testbench for 4KB ROM Memory
 
 // rom_memory_tb.v
 `timescale 1ns / 1ps
-
+```
 module rom_memory_tb;
 
     // Inputs
@@ -116,6 +119,8 @@ module rom_memory_tb;
     end
 
 endmodule
+```
+![Screenshot (23)](https://github.com/user-attachments/assets/06e049e2-fb74-497d-99b4-3710f69a841e)
 
 
 Conclusion
